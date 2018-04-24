@@ -13,7 +13,8 @@ COPY . /src
 
 # Install app and dependencies into /src
 RUN cd /src; npm install
-
+#EXPOSING PORTS
 EXPOSE 8080
+EXPOSE 8090
 
 CMD cd /src && node ./app.js
